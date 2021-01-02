@@ -1,28 +1,23 @@
 import React from "react";
-import Amazon from "./Amazon";
-import Netflix from "./Netflix";
+import SlotM from "./SlotMach";
 
-// console.log(Sdata[0].sname);
+const App = () => {
+  return (
+    <>
+      <h1 className="heading_style">
+        Welcome to{" "}
+        <span style={{ fontWeight: "bold" }}> Slot machine game</span>{" "}
+      </h1>
 
-const favSeries = "netflix";
-
-//*****Implemented simple if/else function****
-// const FavS = () => {
-//   if (favSeries === "netflix") {
-//     return <Netflix />;
-//   } else {
-//     return <Amazon />;
-//   }
-// };
-
-const App = () => (
-  <>
-    <h1 className="heading_style">List of top 5 Netflix Series 2020</h1>
-    
-    {/* Implemented React conditional Rendering called Ternary Operator */}
-
-    {favSeries === "netflix" ? <Netflix /> : <Amazon />}
-  </>
-);
+      <SlotM x="@" y="@" z="@" />
+      <hr />
+      <SlotM x="$" y="#" z="#" />
+      <hr />
+      <SlotM x="!" y="!" z="!" />
+      <hr />
+      <SlotM x="$" y="$" z=":" />
+    </>
+  );
+};
 
 export default App;
