@@ -7,7 +7,4 @@ ReactDOM.render(<App/>, document.getElementById("root"));
 
 
 
-HTMLOptGroupElement
-
-;l'
 
